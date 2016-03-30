@@ -3,6 +3,7 @@
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,14 +20,16 @@
         <activity android:name=".DeepLinkActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
+
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="http"
-                      android:host="www.example.com"
-                      android:pathPrefix="/yantur"/>
-                <data android:scheme="example"
-                      android:host="yantur"/>
+
+                <data
+                    android:host="yantur"
+                    android:scheme="example"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".ShareActivity">
         </activity>
     </application>
 
