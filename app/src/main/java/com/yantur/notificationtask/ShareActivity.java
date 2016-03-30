@@ -13,7 +13,7 @@ public class ShareActivity extends AppCompatActivity {
     private SwipeRefreshLayout swipeRefreshLayout;
     private ArrayAdapter<String> adapter;
     private List<String> data;
-    private int i = 0;
+    private int i = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
