@@ -15,6 +15,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".DeepLinkActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -25,8 +27,6 @@
                 <data android:scheme="example"
                       android:host="yantur"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".DeepLinkActivity">
         </activity>
     </application>
 
